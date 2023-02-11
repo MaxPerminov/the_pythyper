@@ -1,0 +1,21 @@
+import sys
+
+
+def question():
+    while True:
+        q = input("\nWhat letter pattern do you want to practice: ")
+        if q == "exit":
+            sys.exit()
+        elif q == q:
+            n = 0
+            while n != 10:
+                if input(f"{10-n} '{q}' to do: ") == q:
+                    print("+1")
+                    n += 1
+                else:
+                    print("oops")
+            else:
+                print(f"Super, you have done all '{q}'s!!!")
+
+
+question()
