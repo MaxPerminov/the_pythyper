@@ -1,0 +1,20 @@
+def question():
+    while True:
+        q = input("\n     Characters pattern to practice: ")
+        print()
+        if q == "exit":
+            return
+        else:
+            n = 0
+            while n != 10:
+                if input(f"  {10-n} '{q}' to do: ") == q:
+                    print("+1".rjust(20))
+                    n += 1
+                else:
+                    n = 0
+                    print("oops\n".rjust(24))
+            else:
+                print(f"  Super, you have done all '{q}'s!!!")
+
+
+question()
