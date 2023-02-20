@@ -1,3 +1,3 @@
 To calculate minutes and seconds from seconds:
 7600 sec / 60 =  126.6666666666667(126 minutes)
-0.6666666666667 * 60 = 40 sec(rounded)
+0.6666666666667 * 60 = 40 sec(rounded).

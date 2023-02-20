@@ -1,5 +1,6 @@
 import time
 import math
+import pyperclip
 
 
 def typer():
@@ -45,9 +46,11 @@ def typer():
                 question = input(f"  {3-n} '{pattern}' to do: ")
                 if question == "exit":
                     timer = time.time() - start
-                    print(f"    Bye! Your time is "
-                          f"{(math.floor(timer/60))} min {round((timer/60 - math.floor(timer/60))*60)} sec!"
-                          f"\n    You have made {oops} mistakes.")
+                    finish = (f"    Bye! Your time is "
+                              f"{(math.floor(timer/60))} min {round((timer/60 - math.floor(timer/60))*60)} sec!"
+                              f"\n    You have made {oops} mistakes.")
+                    pyperclip.copy(finish)
+                    print(finish)
                     time.sleep(3)
                     return
                 elif question == pattern:
