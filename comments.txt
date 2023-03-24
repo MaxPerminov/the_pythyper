@@ -1,3 +1,13 @@
 To calculate minutes and seconds from seconds:
 7600 sec / 60 =  126.6666666666667(126 minutes)
 0.6666666666667 * 60 = 40 sec(rounded).
+
+______________________________________________________________
+hours, minutes, seconds from seconds:
+
+
+12345 sec = 
+
+hours = 12345 // 3600 ## divide seconds by 60 min and 60 sec, without remainder
+minutes = 12345 % 3600 // 60 ## first get remained seconds of hours, then divide it by 60 seconds without remainder
+seconds = 12345 % 60 // get remainded seconds of minutes
